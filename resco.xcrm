@@ -44,73 +44,18 @@
         <property schema="telephone1"/>
         <property schema="transactioncurrencyid"/>
         <property schema="websiteurl"/>
-        <property schema="xcrm_alarmpanelcode"/>
-        <property schema="xcrm_alarmpanellocation"/>
-        <property schema="xcrm_buildingalarm"/>
-        <property schema="xcrm_buildingcontact"/>
         <property schema="xcrm_moaccountnumber"/>
-        <property schema="xcrm_moaccountpassword"/>
         <property schema="xcrm_monitoringorganization"/>
-        <property schema="xcrm_monitoringorganizationphone"/>
         <property schema="xcrm_municipality"/>
-        <property schema="xcrm_municipalityphone"/>
-        <property schema="xcrm_notes"/>
         <property schema="xcrm_phoneline1"/>
         <property schema="xcrm_phoneline2"/>
-        <property schema="xcrm_phonenumber"/>
-        <property schema="xcrm_serviceaccountalarm"/>
         <property schema="xcrm_serviceorganization"/>
         <property schema="xcrm_testingorganization"/>
       </properties>
       <indexes>
-        <index schema="idx_account_xcrm_testingorganization" issystem="true">
-          <fields>
-            <field schema="xcrm_testingorganization"/>
-          </fields>
-        </index>
-        <index schema="idx_account_primarycontactid" issystem="true">
-          <fields>
-            <field schema="primarycontactid"/>
-          </fields>
-        </index>
-        <index schema="idx_account_parentaccountid" issystem="true">
-          <fields>
-            <field schema="parentaccountid"/>
-          </fields>
-        </index>
-        <index schema="idx_account_xcrm_monitoringorganization" issystem="true">
-          <fields>
-            <field schema="xcrm_monitoringorganization"/>
-          </fields>
-        </index>
-        <index schema="idx_account_xcrm_serviceorganization" issystem="true">
-          <fields>
-            <field schema="xcrm_serviceorganization"/>
-          </fields>
-        </index>
-        <index schema="idx_account_xcrm_municipality" issystem="true">
-          <fields>
-            <field schema="xcrm_municipality"/>
-          </fields>
-        </index>
-        <index schema="idx_account_transactioncurrencyid" issystem="true">
-          <fields>
-            <field schema="transactioncurrencyid"/>
-          </fields>
-        </index>
-        <index schema="idx_account_ownerid" issystem="true">
-          <fields>
-            <field schema="ownerid"/>
-          </fields>
-        </index>
         <index schema="idx_account_defaultpricelevelid" issystem="true">
           <fields>
             <field schema="defaultpricelevelid"/>
-          </fields>
-        </index>
-        <index schema="idx_account_preferredequipmentid" issystem="true">
-          <fields>
-            <field schema="preferredequipmentid"/>
           </fields>
         </index>
         <index schema="idx_account_msdyn_billingaccount" issystem="true">
@@ -126,6 +71,51 @@
         <index schema="idx_account_msdyn_serviceterritory" issystem="true">
           <fields>
             <field schema="msdyn_serviceterritory"/>
+          </fields>
+        </index>
+        <index schema="idx_account_ownerid" issystem="true">
+          <fields>
+            <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_account_parentaccountid" issystem="true">
+          <fields>
+            <field schema="parentaccountid"/>
+          </fields>
+        </index>
+        <index schema="idx_account_preferredequipmentid" issystem="true">
+          <fields>
+            <field schema="preferredequipmentid"/>
+          </fields>
+        </index>
+        <index schema="idx_account_primarycontactid" issystem="true">
+          <fields>
+            <field schema="primarycontactid"/>
+          </fields>
+        </index>
+        <index schema="idx_account_transactioncurrencyid" issystem="true">
+          <fields>
+            <field schema="transactioncurrencyid"/>
+          </fields>
+        </index>
+        <index schema="idx_account_xcrm_monitoringorganization" issystem="true">
+          <fields>
+            <field schema="xcrm_monitoringorganization"/>
+          </fields>
+        </index>
+        <index schema="idx_account_xcrm_municipality" issystem="true">
+          <fields>
+            <field schema="xcrm_municipality"/>
+          </fields>
+        </index>
+        <index schema="idx_account_xcrm_serviceorganization" issystem="true">
+          <fields>
+            <field schema="xcrm_serviceorganization"/>
+          </fields>
+        </index>
+        <index schema="idx_account_xcrm_testingorganization" issystem="true">
+          <fields>
+            <field schema="xcrm_testingorganization"/>
           </fields>
         </index>
         <index schema="idx_account_name" issystem="true">
@@ -151,14 +141,14 @@
         <property schema="subject"/>
       </properties>
       <indexes>
-        <index schema="idx_activity_regardingobjectid" issystem="true">
-          <fields>
-            <field schema="regardingobjectid"/>
-          </fields>
-        </index>
         <index schema="idx_activity_ownerid" issystem="true">
           <fields>
             <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_activity_regardingobjectid" issystem="true">
+          <fields>
+            <field schema="regardingobjectid"/>
           </fields>
         </index>
         <index schema="idx_activity_subject" issystem="true">
@@ -177,14 +167,14 @@
         <property schema="partyid"/>
       </properties>
       <indexes>
-        <index schema="idx_activityparty_partyid" issystem="true">
-          <fields>
-            <field schema="partyid"/>
-          </fields>
-        </index>
         <index schema="idx_activityparty_activityid" issystem="true">
           <fields>
             <field schema="activityid"/>
+          </fields>
+        </index>
+        <index schema="idx_activityparty_partyid" issystem="true">
+          <fields>
+            <field schema="partyid"/>
           </fields>
         </index>
       </indexes>
@@ -243,14 +233,14 @@
         <property schema="subject"/>
       </properties>
       <indexes>
-        <index schema="idx_appointment_regardingobjectid" issystem="true">
-          <fields>
-            <field schema="regardingobjectid"/>
-          </fields>
-        </index>
         <index schema="idx_appointment_ownerid" issystem="true">
           <fields>
             <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_appointment_regardingobjectid" issystem="true">
+          <fields>
+            <field schema="regardingobjectid"/>
           </fields>
         </index>
         <index schema="idx_appointment_subject" issystem="true">
@@ -340,24 +330,14 @@
         <property schema="xcrm_haschild"/>
       </properties>
       <indexes>
-        <index schema="idx_bookableresourcebooking_resource" issystem="true">
-          <fields>
-            <field schema="resource"/>
-          </fields>
-        </index>
         <index schema="idx_bookableresourcebooking_bookingstatus" issystem="true">
           <fields>
             <field schema="bookingstatus"/>
           </fields>
         </index>
-        <index schema="idx_bookableresourcebooking_ownerid" issystem="true">
+        <index schema="idx_bookableresourcebooking_msdyn_resourcegroup" issystem="true">
           <fields>
-            <field schema="ownerid"/>
-          </fields>
-        </index>
-        <index schema="idx_bookableresourcebooking_transactioncurrencyid" issystem="true">
-          <fields>
-            <field schema="transactioncurrencyid"/>
+            <field schema="msdyn_resourcegroup"/>
           </fields>
         </index>
         <index schema="idx_bookableresourcebooking_msdyn_workorder" issystem="true">
@@ -365,9 +345,19 @@
             <field schema="msdyn_workorder"/>
           </fields>
         </index>
-        <index schema="idx_bookableresourcebooking_msdyn_resourcegroup" issystem="true">
+        <index schema="idx_bookableresourcebooking_ownerid" issystem="true">
           <fields>
-            <field schema="msdyn_resourcegroup"/>
+            <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_bookableresourcebooking_resource" issystem="true">
+          <fields>
+            <field schema="resource"/>
+          </fields>
+        </index>
+        <index schema="idx_bookableresourcebooking_transactioncurrencyid" issystem="true">
+          <fields>
+            <field schema="transactioncurrencyid"/>
           </fields>
         </index>
         <index schema="idx_bookableresourcebooking_name" issystem="true">
@@ -623,14 +613,14 @@
         <property schema="to"/>
       </properties>
       <indexes>
-        <index schema="idx_email_regardingobjectid" issystem="true">
-          <fields>
-            <field schema="regardingobjectid"/>
-          </fields>
-        </index>
         <index schema="idx_email_ownerid" issystem="true">
           <fields>
             <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_email_regardingobjectid" issystem="true">
+          <fields>
+            <field schema="regardingobjectid"/>
           </fields>
         </index>
         <index schema="idx_email_subject" issystem="true">
@@ -662,11 +652,6 @@
         <property schema="title"/>
       </properties>
       <indexes>
-        <index schema="idx_incident_subjectid" issystem="true">
-          <fields>
-            <field schema="subjectid"/>
-          </fields>
-        </index>
         <index schema="idx_incident_customerid" issystem="true">
           <fields>
             <field schema="customerid"/>
@@ -675,6 +660,11 @@
         <index schema="idx_incident_ownerid" issystem="true">
           <fields>
             <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_incident_subjectid" issystem="true">
+          <fields>
+            <field schema="subjectid"/>
           </fields>
         </index>
         <index schema="idx_incident_title" issystem="true">
@@ -718,24 +708,9 @@
         <property schema="xcrm_workorder"/>
       </properties>
       <indexes>
-        <index schema="idx_invoice_xcrm_serviceaccount" issystem="true">
-          <fields>
-            <field schema="xcrm_serviceaccount"/>
-          </fields>
-        </index>
-        <index schema="idx_invoice_xcrm_salestaxcode" issystem="true">
-          <fields>
-            <field schema="xcrm_salestaxcode"/>
-          </fields>
-        </index>
         <index schema="idx_invoice_customerid" issystem="true">
           <fields>
             <field schema="customerid"/>
-          </fields>
-        </index>
-        <index schema="idx_invoice_transactioncurrencyid" issystem="true">
-          <fields>
-            <field schema="transactioncurrencyid"/>
           </fields>
         </index>
         <index schema="idx_invoice_ownerid" issystem="true">
@@ -743,19 +718,34 @@
             <field schema="ownerid"/>
           </fields>
         </index>
+        <index schema="idx_invoice_pricelevelid" issystem="true">
+          <fields>
+            <field schema="pricelevelid"/>
+          </fields>
+        </index>
         <index schema="idx_invoice_salesorderid" issystem="true">
           <fields>
             <field schema="salesorderid"/>
           </fields>
         </index>
+        <index schema="idx_invoice_transactioncurrencyid" issystem="true">
+          <fields>
+            <field schema="transactioncurrencyid"/>
+          </fields>
+        </index>
+        <index schema="idx_invoice_xcrm_salestaxcode" issystem="true">
+          <fields>
+            <field schema="xcrm_salestaxcode"/>
+          </fields>
+        </index>
+        <index schema="idx_invoice_xcrm_serviceaccount" issystem="true">
+          <fields>
+            <field schema="xcrm_serviceaccount"/>
+          </fields>
+        </index>
         <index schema="idx_invoice_xcrm_workorder" issystem="true">
           <fields>
             <field schema="xcrm_workorder"/>
-          </fields>
-        </index>
-        <index schema="idx_invoice_pricelevelid" issystem="true">
-          <fields>
-            <field schema="pricelevelid"/>
           </fields>
         </index>
         <index schema="idx_invoice_name" issystem="true">
@@ -797,14 +787,14 @@
             <field schema="ownerid"/>
           </fields>
         </index>
-        <index schema="idx_invoicedetail_transactioncurrencyid" issystem="true">
-          <fields>
-            <field schema="transactioncurrencyid"/>
-          </fields>
-        </index>
         <index schema="idx_invoicedetail_productid" issystem="true">
           <fields>
             <field schema="productid"/>
+          </fields>
+        </index>
+        <index schema="idx_invoicedetail_transactioncurrencyid" issystem="true">
+          <fields>
+            <field schema="transactioncurrencyid"/>
           </fields>
         </index>
         <index schema="idx_invoicedetail_uomid" issystem="true">
@@ -837,6 +827,11 @@
         <property schema="statuscode"/>
       </properties>
       <indexes>
+        <index schema="idx_msdyn_agreement_msdyn_pricelist" issystem="true">
+          <fields>
+            <field schema="msdyn_pricelist"/>
+          </fields>
+        </index>
         <index schema="idx_msdyn_agreement_msdyn_serviceaccount" issystem="true">
           <fields>
             <field schema="msdyn_serviceaccount"/>
@@ -845,11 +840,6 @@
         <index schema="idx_msdyn_agreement_ownerid" issystem="true">
           <fields>
             <field schema="ownerid"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_agreement_msdyn_pricelist" issystem="true">
-          <fields>
-            <field schema="msdyn_pricelist"/>
           </fields>
         </index>
         <index schema="idx_msdyn_agreement_msdyn_name" issystem="true">
@@ -863,6 +853,7 @@
       <properties>
         <property schema="createdon"/>
         <property schema="modifiedon"/>
+        <property schema="msdyn_agreement"/>
         <property schema="msdyn_agreementbookingincidentid"/>
         <property schema="msdyn_customerasset"/>
         <property schema="msdyn_incidenttype"/>
@@ -876,6 +867,11 @@
         <property schema="xcrm_tankhydrotestduedate"/>
       </properties>
       <indexes>
+        <index schema="idx_msdyn_agreementbookingincident_msdyn_agreement" issystem="true">
+          <fields>
+            <field schema="msdyn_agreement"/>
+          </fields>
+        </index>
         <index schema="idx_msdyn_agreementbookingincident_msdyn_customerasset" issystem="true">
           <fields>
             <field schema="msdyn_customerasset"/>
@@ -992,7 +988,7 @@
         </index>
       </indexes>
     </entity>
-    <entity schema="msdyn_customerasset">
+    <entity schema="msdyn_customerasset" xattr="2097152">
       <properties>
         <property schema="createdon"/>
         <property schema="modifiedby"/>
@@ -1006,24 +1002,19 @@
         <property schema="ownerid"/>
         <property schema="statecode"/>
         <property schema="statuscode"/>
-        <property schema="xcrm_100ratedcapacity"/>
-        <property schema="xcrm_100ratedpressure"/>
-        <property schema="xcrm_150ratedpressure"/>
         <property schema="xcrm_addincidentsonworkorder"/>
         <property schema="xcrm_address"/>
         <property schema="xcrm_agreement"/>
-        <property schema="xcrm_amps"/>
         <property schema="xcrm_appliancegroup"/>
         <property schema="xcrm_appliancelength"/>
         <property schema="xcrm_applianceorder"/>
         <property schema="xcrm_appliancesubtype"/>
         <property schema="xcrm_appliancetype"/>
         <property schema="xcrm_appliancewidth"/>
+        <property schema="xcrm_assettype"/>
         <property schema="xcrm_bookingsetup"/>
         <property schema="xcrm_bracket"/>
-        <property schema="xcrm_controllertype"/>
         <property schema="xcrm_customerassetcategory"/>
-        <property schema="xcrm_cycles"/>
         <property schema="xcrm_cylinderpressure"/>
         <property schema="xcrm_date1"/>
         <property schema="xcrm_date2"/>
@@ -1033,19 +1024,14 @@
         <property schema="xcrm_dateinstalled"/>
         <property schema="xcrm_disconnectingmeanslocation"/>
         <property schema="xcrm_documentlocation"/>
-        <property schema="xcrm_drivertype"/>
         <property schema="xcrm_electricalconnectiontype"/>
-        <property schema="xcrm_enclosure"/>
         <property schema="xcrm_extmodelnumber" displayformat="Barcode"/>
         <property schema="xcrm_firmwarerevno"/>
-        <property schema="xcrm_ground"/>
-        <property schema="xcrm_impellerdiameter"/>
         <property schema="xcrm_lastservicedate"/>
         <property schema="xcrm_location"/>
         <property schema="xcrm_manufacturedate"/>
         <property schema="xcrm_manufacturer"/>
         <property schema="xcrm_meansoftransmission"/>
-        <property schema="xcrm_model"/>
         <property schema="xcrm_modelnumber"/>
         <property schema="xcrm_nozzle2quantity"/>
         <property schema="xcrm_nozzle2type"/>
@@ -1056,7 +1042,6 @@
         <property schema="xcrm_originaltrippingairpressure"/>
         <property schema="xcrm_originaltriptime"/>
         <property schema="xcrm_originalwaterdeliverytime"/>
-        <property schema="xcrm_phase"/>
         <property schema="xcrm_pipetype"/>
         <property schema="xcrm_previoustrippingairpressure"/>
         <property schema="xcrm_previoustriptime"/>
@@ -1068,8 +1053,6 @@
         <property schema="xcrm_primarypoweroclocation"/>
         <property schema="xcrm_primarypowerocprotectiontype"/>
         <property schema="xcrm_quantity"/>
-        <property schema="xcrm_ratedhp"/>
-        <property schema="xcrm_ratedrpm"/>
         <property schema="xcrm_remote1tagbarcode" displayformat="Barcode"/>
         <property schema="xcrm_remote2tagbarcode" displayformat="Barcode"/>
         <property schema="xcrm_residualpressure"/>
@@ -1078,17 +1061,11 @@
         <property schema="xcrm_secondarypowercalccapstandby"/>
         <property schema="xcrm_secondarypowerlocation"/>
         <property schema="xcrm_secondarypowertype"/>
-        <property schema="xcrm_sensitivitymaximum"/>
-        <property schema="xcrm_sensitivityminimum"/>
         <property schema="xcrm_serialnumber" displayformat="Barcode"/>
-        <property schema="xcrm_shaftorientation"/>
         <property schema="xcrm_shelf"/>
         <property schema="xcrm_shelfdepth"/>
-        <property schema="xcrm_shutoffpressure"/>
-        <property schema="xcrm_size"/>
         <property schema="xcrm_staticpressureaftertest"/>
         <property schema="xcrm_staticpressurebeforetest"/>
-        <property schema="xcrm_suctionfrom"/>
         <property schema="xcrm_systemcapacity"/>
         <property schema="xcrm_systemtagbarcode" displayformat="Barcode"/>
         <property schema="xcrm_systemtype1"/>
@@ -1099,29 +1076,53 @@
         <property schema="xcrm_ulclisting"/>
         <property schema="xcrm_unit"/>
         <property schema="xcrm_verificationlabeldate"/>
-        <property schema="xcrm_voltage"/>
         <property schema="xcrm_weight"/>
         <property schema="xcrm_workorder"/>
       </properties>
       <indexes>
-        <index schema="idx_msdyn_customerasset_xcrm_appliancetype" issystem="true">
-          <fields>
-            <field schema="xcrm_appliancetype"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_customerasset_xcrm_manufacturer" issystem="true">
-          <fields>
-            <field schema="xcrm_manufacturer"/>
-          </fields>
-        </index>
         <index schema="idx_msdyn_customerasset_modifiedby" issystem="true">
           <fields>
             <field schema="modifiedby"/>
           </fields>
         </index>
+        <index schema="idx_msdyn_customerasset_msdyn_account" issystem="true">
+          <fields>
+            <field schema="msdyn_account"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_customerasset_msdyn_masterasset" issystem="true">
+          <fields>
+            <field schema="msdyn_masterasset"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_customerasset_msdyn_parentasset" issystem="true">
+          <fields>
+            <field schema="msdyn_parentasset"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_customerasset_msdyn_product" issystem="true">
+          <fields>
+            <field schema="msdyn_product"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_customerasset_ownerid" issystem="true">
+          <fields>
+            <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_customerasset_xcrm_agreement" issystem="true">
+          <fields>
+            <field schema="xcrm_agreement"/>
+          </fields>
+        </index>
         <index schema="idx_msdyn_customerasset_xcrm_appliancesubtype" issystem="true">
           <fields>
             <field schema="xcrm_appliancesubtype"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_customerasset_xcrm_appliancetype" issystem="true">
+          <fields>
+            <field schema="xcrm_appliancetype"/>
           </fields>
         </index>
         <index schema="idx_msdyn_customerasset_xcrm_bookingsetup" issystem="true">
@@ -1134,39 +1135,14 @@
             <field schema="xcrm_customerassetcategory"/>
           </fields>
         </index>
-        <index schema="idx_msdyn_customerasset_xcrm_agreement" issystem="true">
+        <index schema="idx_msdyn_customerasset_xcrm_manufacturer" issystem="true">
           <fields>
-            <field schema="xcrm_agreement"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_customerasset_ownerid" issystem="true">
-          <fields>
-            <field schema="ownerid"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_customerasset_msdyn_product" issystem="true">
-          <fields>
-            <field schema="msdyn_product"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_customerasset_msdyn_parentasset" issystem="true">
-          <fields>
-            <field schema="msdyn_parentasset"/>
+            <field schema="xcrm_manufacturer"/>
           </fields>
         </index>
         <index schema="idx_msdyn_customerasset_xcrm_workorder" issystem="true">
           <fields>
             <field schema="xcrm_workorder"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_customerasset_msdyn_masterasset" issystem="true">
-          <fields>
-            <field schema="msdyn_masterasset"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_customerasset_msdyn_account" issystem="true">
-          <fields>
-            <field schema="msdyn_account"/>
           </fields>
         </index>
         <index schema="idx_msdyn_customerasset_msdyn_name" issystem="true">
@@ -1249,7 +1225,6 @@
         <property schema="xcrm_fieldtomap"/>
         <property schema="xcrm_incidenttypesettings"/>
         <property schema="xcrm_interval"/>
-        <property schema="xcrm_isuniversalincident"/>
         <property schema="xcrm_priority"/>
       </properties>
       <indexes>
@@ -1332,14 +1307,14 @@
         <property schema="ownerid"/>
       </properties>
       <indexes>
-        <index schema="idx_msdyn_paymentdetail_msdyn_payment" issystem="true">
-          <fields>
-            <field schema="msdyn_payment"/>
-          </fields>
-        </index>
         <index schema="idx_msdyn_paymentdetail_msdyn_invoice" issystem="true">
           <fields>
             <field schema="msdyn_invoice"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_paymentdetail_msdyn_payment" issystem="true">
+          <fields>
+            <field schema="msdyn_payment"/>
           </fields>
         </index>
         <index schema="idx_msdyn_paymentdetail_msdyn_workorder" issystem="true">
@@ -1447,14 +1422,14 @@
             <field schema="msdyn_product"/>
           </fields>
         </index>
-        <index schema="idx_msdyn_productinventory_msdyn_warehouse" issystem="true">
-          <fields>
-            <field schema="msdyn_warehouse"/>
-          </fields>
-        </index>
         <index schema="idx_msdyn_productinventory_msdyn_unit" issystem="true">
           <fields>
             <field schema="msdyn_unit"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_productinventory_msdyn_warehouse" issystem="true">
+          <fields>
+            <field schema="msdyn_warehouse"/>
           </fields>
         </index>
         <index schema="idx_msdyn_productinventory_msdyn_name" issystem="true">
@@ -1587,16 +1562,17 @@
         <property schema="ownerid"/>
         <property schema="statecode"/>
         <property schema="statuscode"/>
+        <property schema="xcrm_comments"/>
       </properties>
       <indexes>
-        <index schema="idx_msdyn_timeoffrequest_msdyn_resource" issystem="true">
-          <fields>
-            <field schema="msdyn_resource"/>
-          </fields>
-        </index>
         <index schema="idx_msdyn_timeoffrequest_msdyn_approvedby" issystem="true">
           <fields>
             <field schema="msdyn_approvedby"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_timeoffrequest_msdyn_resource" issystem="true">
+          <fields>
+            <field schema="msdyn_resource"/>
           </fields>
         </index>
         <index schema="idx_msdyn_timeoffrequest_ownerid" issystem="true">
@@ -1689,8 +1665,6 @@
         <property schema="statuscode"/>
         <property schema="transactioncurrencyid"/>
         <property schema="versionnumber"/>
-        <property schema="xcrm_alarmpanelcode"/>
-        <property schema="xcrm_alarmpanellocation"/>
         <property schema="xcrm_authoritycompletetime"/>
         <property schema="xcrm_authorityhavingjurisdictioncompletecontac"/>
         <property schema="xcrm_authorityhavingjurisdictionpriorcontact"/>
@@ -1734,24 +1708,9 @@
         <property schema="xcrm_testingorganization"/>
       </properties>
       <indexes>
-        <index schema="idx_msdyn_workorder_xcrm_buildingdepartment" issystem="true">
+        <index schema="idx_msdyn_workorder_createdby" issystem="true">
           <fields>
-            <field schema="xcrm_buildingdepartment"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_msdyn_pricelist" issystem="true">
-          <fields>
-            <field schema="msdyn_pricelist"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_msdyn_taxcode" issystem="true">
-          <fields>
-            <field schema="msdyn_taxcode"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_xcrm_testingorganization" issystem="true">
-          <fields>
-            <field schema="xcrm_testingorganization"/>
+            <field schema="createdby"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorder_msdyn_billingaccount" issystem="true">
@@ -1759,9 +1718,64 @@
             <field schema="msdyn_billingaccount"/>
           </fields>
         </index>
+        <index schema="idx_msdyn_workorder_msdyn_closedby" issystem="true">
+          <fields>
+            <field schema="msdyn_closedby"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorder_msdyn_customerasset" issystem="true">
+          <fields>
+            <field schema="msdyn_customerasset"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorder_msdyn_parentworkorder" issystem="true">
+          <fields>
+            <field schema="msdyn_parentworkorder"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorder_msdyn_pricelist" issystem="true">
+          <fields>
+            <field schema="msdyn_pricelist"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorder_msdyn_primaryincidenttype" issystem="true">
+          <fields>
+            <field schema="msdyn_primaryincidenttype"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorder_msdyn_priority" issystem="true">
+          <fields>
+            <field schema="msdyn_priority"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorder_msdyn_reportedbycontact" issystem="true">
+          <fields>
+            <field schema="msdyn_reportedbycontact"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorder_msdyn_serviceaccount" issystem="true">
+          <fields>
+            <field schema="msdyn_serviceaccount"/>
+          </fields>
+        </index>
         <index schema="idx_msdyn_workorder_msdyn_servicerequest" issystem="true">
           <fields>
             <field schema="msdyn_servicerequest"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorder_msdyn_serviceterritory" issystem="true">
+          <fields>
+            <field schema="msdyn_serviceterritory"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorder_msdyn_substatus" issystem="true">
+          <fields>
+            <field schema="msdyn_substatus"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorder_msdyn_taxcode" issystem="true">
+          <fields>
+            <field schema="msdyn_taxcode"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorder_msdyn_workordertype" issystem="true">
@@ -1769,9 +1783,29 @@
             <field schema="msdyn_workordertype"/>
           </fields>
         </index>
-        <index schema="idx_msdyn_workorder_msdyn_customerasset" issystem="true">
+        <index schema="idx_msdyn_workorder_ownerid" issystem="true">
           <fields>
-            <field schema="msdyn_customerasset"/>
+            <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorder_transactioncurrencyid" issystem="true">
+          <fields>
+            <field schema="transactioncurrencyid"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorder_xcrm_bookingsetup" issystem="true">
+          <fields>
+            <field schema="xcrm_bookingsetup"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorder_xcrm_buildingdepartment" issystem="true">
+          <fields>
+            <field schema="xcrm_buildingdepartment"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorder_xcrm_monitoringorganization" issystem="true">
+          <fields>
+            <field schema="xcrm_monitoringorganization"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorder_xcrm_municipality" issystem="true">
@@ -1784,69 +1818,9 @@
             <field schema="xcrm_serviceorganization"/>
           </fields>
         </index>
-        <index schema="idx_msdyn_workorder_msdyn_serviceaccount" issystem="true">
+        <index schema="idx_msdyn_workorder_xcrm_testingorganization" issystem="true">
           <fields>
-            <field schema="msdyn_serviceaccount"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_msdyn_serviceterritory" issystem="true">
-          <fields>
-            <field schema="msdyn_serviceterritory"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_msdyn_priority" issystem="true">
-          <fields>
-            <field schema="msdyn_priority"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_xcrm_bookingsetup" issystem="true">
-          <fields>
-            <field schema="xcrm_bookingsetup"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_msdyn_reportedbycontact" issystem="true">
-          <fields>
-            <field schema="msdyn_reportedbycontact"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_xcrm_monitoringorganization" issystem="true">
-          <fields>
-            <field schema="xcrm_monitoringorganization"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_transactioncurrencyid" issystem="true">
-          <fields>
-            <field schema="transactioncurrencyid"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_msdyn_primaryincidenttype" issystem="true">
-          <fields>
-            <field schema="msdyn_primaryincidenttype"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_ownerid" issystem="true">
-          <fields>
-            <field schema="ownerid"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_msdyn_substatus" issystem="true">
-          <fields>
-            <field schema="msdyn_substatus"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_createdby" issystem="true">
-          <fields>
-            <field schema="createdby"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_msdyn_parentworkorder" issystem="true">
-          <fields>
-            <field schema="msdyn_parentworkorder"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorder_msdyn_closedby" issystem="true">
-          <fields>
-            <field schema="msdyn_closedby"/>
+            <field schema="xcrm_testingorganization"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorder_msdyn_name" issystem="true">
@@ -1875,10 +1849,8 @@
         <property schema="statecode"/>
         <property schema="statuscode"/>
         <property schema="xcrm_actionperformed"/>
-        <property schema="xcrm_actualsensitivity"/>
         <property schema="xcrm_airpressure"/>
-        <property schema="xcrm_compliancestatus"/>
-        <property schema="xcrm_customerassetbarcode"/>
+        <property schema="xcrm_customerassetbarcode" displayformat="Barcode"/>
         <property schema="xcrm_customerinitialoptions"/>
         <property schema="xcrm_customerinitialoptions1"/>
         <property schema="xcrm_incidentresolved"/>
@@ -1888,10 +1860,10 @@
         <property schema="xcrm_residualpressurecurrent"/>
         <property schema="xcrm_residualpressuredifference"/>
         <property schema="xcrm_residualpressureprevious"/>
-        <property schema="xcrm_sensitivitymaximum"/>
-        <property schema="xcrm_sensitivityminimum"/>
         <property schema="xcrm_staticpressureaftertest"/>
         <property schema="xcrm_staticpressurebeforetest"/>
+        <property schema="xcrm_systemoperationalstatus"/>
+        <property schema="xcrm_testresults"/>
         <property schema="xcrm_timeforpressuretoreturntooriginal"/>
         <property schema="xcrm_trippingairpressure"/>
         <property schema="xcrm_triptime"/>
@@ -1899,9 +1871,9 @@
         <property schema="xcrm_waterpressure"/>
       </properties>
       <indexes>
-        <index schema="idx_msdyn_workorderincident_xcrm_newcustomerasset" issystem="true">
+        <index schema="idx_msdyn_workorderincident_msdyn_customerasset" issystem="true">
           <fields>
-            <field schema="xcrm_newcustomerasset"/>
+            <field schema="msdyn_customerasset"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorderincident_msdyn_incidenttype" issystem="true">
@@ -1909,9 +1881,9 @@
             <field schema="msdyn_incidenttype"/>
           </fields>
         </index>
-        <index schema="idx_msdyn_workorderincident_msdyn_customerasset" issystem="true">
+        <index schema="idx_msdyn_workorderincident_msdyn_workorder" issystem="true">
           <fields>
-            <field schema="msdyn_customerasset"/>
+            <field schema="msdyn_workorder"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorderincident_ownerid" issystem="true">
@@ -1924,9 +1896,9 @@
             <field schema="owninguser"/>
           </fields>
         </index>
-        <index schema="idx_msdyn_workorderincident_msdyn_workorder" issystem="true">
+        <index schema="idx_msdyn_workorderincident_xcrm_newcustomerasset" issystem="true">
           <fields>
-            <field schema="msdyn_workorder"/>
+            <field schema="xcrm_newcustomerasset"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorderincident_msdyn_name" issystem="true">
@@ -1997,24 +1969,9 @@
         <property schema="transactioncurrencyid"/>
       </properties>
       <indexes>
-        <index schema="idx_msdyn_workorderproduct_msdyn_purchaseorderreceiptproduct" issystem="true">
+        <index schema="idx_msdyn_workorderproduct_msdyn_booking" issystem="true">
           <fields>
-            <field schema="msdyn_purchaseorderreceiptproduct"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorderproduct_msdyn_workorderincident" issystem="true">
-          <fields>
-            <field schema="msdyn_workorderincident"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorderproduct_msdyn_product" issystem="true">
-          <fields>
-            <field schema="msdyn_product"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorderproduct_msdyn_pricelist" issystem="true">
-          <fields>
-            <field schema="msdyn_pricelist"/>
+            <field schema="msdyn_booking"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorderproduct_msdyn_customerasset" issystem="true">
@@ -2022,19 +1979,19 @@
             <field schema="msdyn_customerasset"/>
           </fields>
         </index>
-        <index schema="idx_msdyn_workorderproduct_ownerid" issystem="true">
+        <index schema="idx_msdyn_workorderproduct_msdyn_pricelist" issystem="true">
           <fields>
-            <field schema="ownerid"/>
+            <field schema="msdyn_pricelist"/>
           </fields>
         </index>
-        <index schema="idx_msdyn_workorderproduct_msdyn_warehouse" issystem="true">
+        <index schema="idx_msdyn_workorderproduct_msdyn_product" issystem="true">
           <fields>
-            <field schema="msdyn_warehouse"/>
+            <field schema="msdyn_product"/>
           </fields>
         </index>
-        <index schema="idx_msdyn_workorderproduct_transactioncurrencyid" issystem="true">
+        <index schema="idx_msdyn_workorderproduct_msdyn_purchaseorderreceiptproduct" issystem="true">
           <fields>
-            <field schema="transactioncurrencyid"/>
+            <field schema="msdyn_purchaseorderreceiptproduct"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorderproduct_msdyn_unit" issystem="true">
@@ -2042,14 +1999,29 @@
             <field schema="msdyn_unit"/>
           </fields>
         </index>
+        <index schema="idx_msdyn_workorderproduct_msdyn_warehouse" issystem="true">
+          <fields>
+            <field schema="msdyn_warehouse"/>
+          </fields>
+        </index>
         <index schema="idx_msdyn_workorderproduct_msdyn_workorder" issystem="true">
           <fields>
             <field schema="msdyn_workorder"/>
           </fields>
         </index>
-        <index schema="idx_msdyn_workorderproduct_msdyn_booking" issystem="true">
+        <index schema="idx_msdyn_workorderproduct_msdyn_workorderincident" issystem="true">
           <fields>
-            <field schema="msdyn_booking"/>
+            <field schema="msdyn_workorderincident"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorderproduct_ownerid" issystem="true">
+          <fields>
+            <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorderproduct_transactioncurrencyid" issystem="true">
+          <fields>
+            <field schema="transactioncurrencyid"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorderproduct_msdyn_name" issystem="true">
@@ -2124,9 +2096,9 @@
         <property schema="transactioncurrencyid"/>
       </properties>
       <indexes>
-        <index schema="idx_msdyn_workorderservice_msdyn_workorderincident" issystem="true">
+        <index schema="idx_msdyn_workorderservice_msdyn_booking" issystem="true">
           <fields>
-            <field schema="msdyn_workorderincident"/>
+            <field schema="msdyn_booking"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorderservice_msdyn_customerasset" issystem="true">
@@ -2139,14 +2111,9 @@
             <field schema="msdyn_pricelist"/>
           </fields>
         </index>
-        <index schema="idx_msdyn_workorderservice_ownerid" issystem="true">
+        <index schema="idx_msdyn_workorderservice_msdyn_service" issystem="true">
           <fields>
-            <field schema="ownerid"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorderservice_transactioncurrencyid" issystem="true">
-          <fields>
-            <field schema="transactioncurrencyid"/>
+            <field schema="msdyn_service"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorderservice_msdyn_unit" issystem="true">
@@ -2159,14 +2126,19 @@
             <field schema="msdyn_workorder"/>
           </fields>
         </index>
-        <index schema="idx_msdyn_workorderservice_msdyn_booking" issystem="true">
+        <index schema="idx_msdyn_workorderservice_msdyn_workorderincident" issystem="true">
           <fields>
-            <field schema="msdyn_booking"/>
+            <field schema="msdyn_workorderincident"/>
           </fields>
         </index>
-        <index schema="idx_msdyn_workorderservice_msdyn_service" issystem="true">
+        <index schema="idx_msdyn_workorderservice_ownerid" issystem="true">
           <fields>
-            <field schema="msdyn_service"/>
+            <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorderservice_transactioncurrencyid" issystem="true">
+          <fields>
+            <field schema="transactioncurrencyid"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorderservice_msdyn_name" issystem="true">
@@ -2201,24 +2173,14 @@
         <property schema="xcrm_parentwoservicetaskid"/>
       </properties>
       <indexes>
-        <index schema="idx_msdyn_workorderservicetask_msdyn_customerasset" issystem="true">
-          <fields>
-            <field schema="msdyn_customerasset"/>
-          </fields>
-        </index>
         <index schema="idx_msdyn_workorderservicetask_msdyn_booking" issystem="true">
           <fields>
             <field schema="msdyn_booking"/>
           </fields>
         </index>
-        <index schema="idx_msdyn_workorderservicetask_xcrm_parentwoservicetaskid" issystem="true">
+        <index schema="idx_msdyn_workorderservicetask_msdyn_customerasset" issystem="true">
           <fields>
-            <field schema="xcrm_parentwoservicetaskid"/>
-          </fields>
-        </index>
-        <index schema="idx_msdyn_workorderservicetask_msdyn_workorderincident" issystem="true">
-          <fields>
-            <field schema="msdyn_workorderincident"/>
+            <field schema="msdyn_customerasset"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorderservicetask_msdyn_tasktype" issystem="true">
@@ -2231,9 +2193,19 @@
             <field schema="msdyn_workorder"/>
           </fields>
         </index>
+        <index schema="idx_msdyn_workorderservicetask_msdyn_workorderincident" issystem="true">
+          <fields>
+            <field schema="msdyn_workorderincident"/>
+          </fields>
+        </index>
         <index schema="idx_msdyn_workorderservicetask_ownerid" issystem="true">
           <fields>
             <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_msdyn_workorderservicetask_xcrm_parentwoservicetaskid" issystem="true">
+          <fields>
+            <field schema="xcrm_parentwoservicetaskid"/>
           </fields>
         </index>
         <index schema="idx_msdyn_workorderservicetask_msdyn_name" issystem="true">
@@ -2321,14 +2293,14 @@
         <property schema="to"/>
       </properties>
       <indexes>
-        <index schema="idx_phonecall_regardingobjectid" issystem="true">
-          <fields>
-            <field schema="regardingobjectid"/>
-          </fields>
-        </index>
         <index schema="idx_phonecall_ownerid" issystem="true">
           <fields>
             <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_phonecall_regardingobjectid" issystem="true">
+          <fields>
+            <field schema="regardingobjectid"/>
           </fields>
         </index>
         <index schema="idx_phonecall_subject" issystem="true">
@@ -2405,14 +2377,14 @@
         <property schema="xcrm_productassetcategory"/>
       </properties>
       <indexes>
+        <index schema="idx_product_defaultuomid" issystem="true">
+          <fields>
+            <field schema="defaultuomid"/>
+          </fields>
+        </index>
         <index schema="idx_product_defaultuomscheduleid" issystem="true">
           <fields>
             <field schema="defaultuomscheduleid"/>
-          </fields>
-        </index>
-        <index schema="idx_product_pricelevelid" issystem="true">
-          <fields>
-            <field schema="pricelevelid"/>
           </fields>
         </index>
         <index schema="idx_product_msdyn_defaultvendor" issystem="true">
@@ -2420,14 +2392,14 @@
             <field schema="msdyn_defaultvendor"/>
           </fields>
         </index>
+        <index schema="idx_product_pricelevelid" issystem="true">
+          <fields>
+            <field schema="pricelevelid"/>
+          </fields>
+        </index>
         <index schema="idx_product_subjectid" issystem="true">
           <fields>
             <field schema="subjectid"/>
-          </fields>
-        </index>
-        <index schema="idx_product_defaultuomid" issystem="true">
-          <fields>
-            <field schema="defaultuomid"/>
           </fields>
         </index>
         <index schema="idx_product_transactioncurrencyid" issystem="true">
@@ -2466,11 +2438,6 @@
         <property schema="uomid"/>
       </properties>
       <indexes>
-        <index schema="idx_productpricelevel_transactioncurrencyid" issystem="true">
-          <fields>
-            <field schema="transactioncurrencyid"/>
-          </fields>
-        </index>
         <index schema="idx_productpricelevel_discounttypeid" issystem="true">
           <fields>
             <field schema="discounttypeid"/>
@@ -2484,6 +2451,11 @@
         <index schema="idx_productpricelevel_productid" issystem="true">
           <fields>
             <field schema="productid"/>
+          </fields>
+        </index>
+        <index schema="idx_productpricelevel_transactioncurrencyid" issystem="true">
+          <fields>
+            <field schema="transactioncurrencyid"/>
           </fields>
         </index>
         <index schema="idx_productpricelevel_uomid" issystem="true">
@@ -2525,24 +2497,9 @@
         <property schema="xcrm_taxable"/>
       </properties>
       <indexes>
-        <index schema="idx_quote_xcrm_serviceaccount" issystem="true">
-          <fields>
-            <field schema="xcrm_serviceaccount"/>
-          </fields>
-        </index>
-        <index schema="idx_quote_xcrm_salestaxcode" issystem="true">
-          <fields>
-            <field schema="xcrm_salestaxcode"/>
-          </fields>
-        </index>
         <index schema="idx_quote_customerid" issystem="true">
           <fields>
             <field schema="customerid"/>
-          </fields>
-        </index>
-        <index schema="idx_quote_transactioncurrencyid" issystem="true">
-          <fields>
-            <field schema="transactioncurrencyid"/>
           </fields>
         </index>
         <index schema="idx_quote_ownerid" issystem="true">
@@ -2553,6 +2510,21 @@
         <index schema="idx_quote_pricelevelid" issystem="true">
           <fields>
             <field schema="pricelevelid"/>
+          </fields>
+        </index>
+        <index schema="idx_quote_transactioncurrencyid" issystem="true">
+          <fields>
+            <field schema="transactioncurrencyid"/>
+          </fields>
+        </index>
+        <index schema="idx_quote_xcrm_salestaxcode" issystem="true">
+          <fields>
+            <field schema="xcrm_salestaxcode"/>
+          </fields>
+        </index>
+        <index schema="idx_quote_xcrm_serviceaccount" issystem="true">
+          <fields>
+            <field schema="xcrm_serviceaccount"/>
           </fields>
         </index>
         <index schema="idx_quote_name" issystem="true">
@@ -2585,6 +2557,11 @@
         <property schema="volumediscountamount"/>
       </properties>
       <indexes>
+        <index schema="idx_quotedetail_ownerid" issystem="true">
+          <fields>
+            <field schema="ownerid"/>
+          </fields>
+        </index>
         <index schema="idx_quotedetail_productid" issystem="true">
           <fields>
             <field schema="productid"/>
@@ -2595,9 +2572,9 @@
             <field schema="quoteid"/>
           </fields>
         </index>
-        <index schema="idx_quotedetail_ownerid" issystem="true">
+        <index schema="idx_quotedetail_transactioncurrencyid" issystem="true">
           <fields>
-            <field schema="ownerid"/>
+            <field schema="transactioncurrencyid"/>
           </fields>
         </index>
         <index schema="idx_quotedetail_uomid" issystem="true">
@@ -2605,107 +2582,9 @@
             <field schema="uomid"/>
           </fields>
         </index>
-        <index schema="idx_quotedetail_transactioncurrencyid" issystem="true">
-          <fields>
-            <field schema="transactioncurrencyid"/>
-          </fields>
-        </index>
         <index schema="idx_quotedetail_quotedetailname" issystem="true">
           <fields>
             <field schema="quotedetailname"/>
-          </fields>
-        </index>
-      </indexes>
-    </entity>
-    <entity schema="resco_devicecontrol">
-      <properties>
-        <property schema="createdby"/>
-        <property schema="createdon"/>
-        <property schema="createdonbehalfby"/>
-        <property schema="importsequencenumber"/>
-        <property schema="modifiedby"/>
-        <property schema="modifiedon"/>
-        <property schema="modifiedonbehalfby"/>
-        <property schema="overriddencreatedon"/>
-        <property schema="ownerid"/>
-        <property schema="owningbusinessunit"/>
-        <property schema="owningteam"/>
-        <property schema="owninguser"/>
-        <property schema="resco_devicecontrolid"/>
-        <property schema="resco_deviceid"/>
-        <property schema="resco_entityname"/>
-        <property schema="resco_mobiledeviceid"/>
-        <property schema="resco_recordid"/>
-        <property schema="resco_requestdata"/>
-        <property schema="resco_requesttype"/>
-        <property schema="resco_responsecode"/>
-        <property schema="resco_responsedata"/>
-        <property schema="resco_responsedata1"/>
-        <property schema="resco_responsedata2"/>
-        <property schema="resco_responsedata3"/>
-        <property schema="resco_responsedata4"/>
-        <property schema="resco_responsedata5"/>
-        <property schema="resco_responsedata6"/>
-        <property schema="resco_responsedata7"/>
-        <property schema="resco_responsedata8"/>
-        <property schema="resco_responsedata9"/>
-        <property schema="resco_responsedatalength"/>
-        <property schema="resco_responsestatus"/>
-        <property schema="statecode"/>
-        <property schema="statuscode"/>
-        <property schema="timezoneruleversionnumber"/>
-        <property schema="utcconversiontimezonecode"/>
-        <property schema="versionnumber"/>
-      </properties>
-      <indexes>
-        <index schema="idx_resco_devicecontrol_owninguser" issystem="true">
-          <fields>
-            <field schema="owninguser"/>
-          </fields>
-        </index>
-        <index schema="idx_resco_devicecontrol_createdonbehalfby" issystem="true">
-          <fields>
-            <field schema="createdonbehalfby"/>
-          </fields>
-        </index>
-        <index schema="idx_resco_devicecontrol_resco_mobiledeviceid" issystem="true">
-          <fields>
-            <field schema="resco_mobiledeviceid"/>
-          </fields>
-        </index>
-        <index schema="idx_resco_devicecontrol_owningbusinessunit" issystem="true">
-          <fields>
-            <field schema="owningbusinessunit"/>
-          </fields>
-        </index>
-        <index schema="idx_resco_devicecontrol_owningteam" issystem="true">
-          <fields>
-            <field schema="owningteam"/>
-          </fields>
-        </index>
-        <index schema="idx_resco_devicecontrol_modifiedby" issystem="true">
-          <fields>
-            <field schema="modifiedby"/>
-          </fields>
-        </index>
-        <index schema="idx_resco_devicecontrol_createdby" issystem="true">
-          <fields>
-            <field schema="createdby"/>
-          </fields>
-        </index>
-        <index schema="idx_resco_devicecontrol_modifiedonbehalfby" issystem="true">
-          <fields>
-            <field schema="modifiedonbehalfby"/>
-          </fields>
-        </index>
-        <index schema="idx_resco_devicecontrol_ownerid" issystem="true">
-          <fields>
-            <field schema="ownerid"/>
-          </fields>
-        </index>
-        <index schema="idx_resco_devicecontrol_resco_deviceid" issystem="true">
-          <fields>
-            <field schema="resco_deviceid"/>
           </fields>
         </index>
       </indexes>
@@ -2813,24 +2692,9 @@
         <property schema="xcrm_taxable"/>
       </properties>
       <indexes>
-        <index schema="idx_salesorder_xcrm_serviceaccount" issystem="true">
-          <fields>
-            <field schema="xcrm_serviceaccount"/>
-          </fields>
-        </index>
-        <index schema="idx_salesorder_xcrm_salestaxcode" issystem="true">
-          <fields>
-            <field schema="xcrm_salestaxcode"/>
-          </fields>
-        </index>
         <index schema="idx_salesorder_customerid" issystem="true">
           <fields>
             <field schema="customerid"/>
-          </fields>
-        </index>
-        <index schema="idx_salesorder_transactioncurrencyid" issystem="true">
-          <fields>
-            <field schema="transactioncurrencyid"/>
           </fields>
         </index>
         <index schema="idx_salesorder_ownerid" issystem="true">
@@ -2841,6 +2705,21 @@
         <index schema="idx_salesorder_pricelevelid" issystem="true">
           <fields>
             <field schema="pricelevelid"/>
+          </fields>
+        </index>
+        <index schema="idx_salesorder_transactioncurrencyid" issystem="true">
+          <fields>
+            <field schema="transactioncurrencyid"/>
+          </fields>
+        </index>
+        <index schema="idx_salesorder_xcrm_salestaxcode" issystem="true">
+          <fields>
+            <field schema="xcrm_salestaxcode"/>
+          </fields>
+        </index>
+        <index schema="idx_salesorder_xcrm_serviceaccount" issystem="true">
+          <fields>
+            <field schema="xcrm_serviceaccount"/>
           </fields>
         </index>
         <index schema="idx_salesorder_name" issystem="true">
@@ -2872,24 +2751,24 @@
         <property schema="volumediscountamount"/>
       </properties>
       <indexes>
-        <index schema="idx_salesorderdetail_salesorderid" issystem="true">
-          <fields>
-            <field schema="salesorderid"/>
-          </fields>
-        </index>
         <index schema="idx_salesorderdetail_ownerid" issystem="true">
           <fields>
             <field schema="ownerid"/>
           </fields>
         </index>
-        <index schema="idx_salesorderdetail_transactioncurrencyid" issystem="true">
-          <fields>
-            <field schema="transactioncurrencyid"/>
-          </fields>
-        </index>
         <index schema="idx_salesorderdetail_productid" issystem="true">
           <fields>
             <field schema="productid"/>
+          </fields>
+        </index>
+        <index schema="idx_salesorderdetail_salesorderid" issystem="true">
+          <fields>
+            <field schema="salesorderid"/>
+          </fields>
+        </index>
+        <index schema="idx_salesorderdetail_transactioncurrencyid" issystem="true">
+          <fields>
+            <field schema="transactioncurrencyid"/>
           </fields>
         </index>
         <index schema="idx_salesorderdetail_uomid" issystem="true">
@@ -2940,14 +2819,14 @@
         <property schema="subject"/>
       </properties>
       <indexes>
-        <index schema="idx_serviceappointment_regardingobjectid" issystem="true">
-          <fields>
-            <field schema="regardingobjectid"/>
-          </fields>
-        </index>
         <index schema="idx_serviceappointment_ownerid" issystem="true">
           <fields>
             <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_serviceappointment_regardingobjectid" issystem="true">
+          <fields>
+            <field schema="regardingobjectid"/>
           </fields>
         </index>
         <index schema="idx_serviceappointment_serviceid" issystem="true">
@@ -2983,9 +2862,9 @@
         <property schema="siteid"/>
       </properties>
       <indexes>
-        <index schema="idx_sharepointdocumentlocation_regardingobjectid" issystem="true">
+        <index schema="idx_sharepointdocumentlocation_ownerid" issystem="true">
           <fields>
-            <field schema="regardingobjectid"/>
+            <field schema="ownerid"/>
           </fields>
         </index>
         <index schema="idx_sharepointdocumentlocation_parentsiteorlocation" issystem="true">
@@ -2993,9 +2872,9 @@
             <field schema="parentsiteorlocation"/>
           </fields>
         </index>
-        <index schema="idx_sharepointdocumentlocation_ownerid" issystem="true">
+        <index schema="idx_sharepointdocumentlocation_regardingobjectid" issystem="true">
           <fields>
-            <field schema="ownerid"/>
+            <field schema="regardingobjectid"/>
           </fields>
         </index>
         <index schema="idx_sharepointdocumentlocation_name" issystem="true">
@@ -3021,14 +2900,14 @@
         <property schema="statuscode"/>
       </properties>
       <indexes>
-        <index schema="idx_sharepointsite_parentsite" issystem="true">
-          <fields>
-            <field schema="parentsite"/>
-          </fields>
-        </index>
         <index schema="idx_sharepointsite_ownerid" issystem="true">
           <fields>
             <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_sharepointsite_parentsite" issystem="true">
+          <fields>
+            <field schema="parentsite"/>
           </fields>
         </index>
         <index schema="idx_sharepointsite_name" issystem="true">
@@ -3072,9 +2951,9 @@
         <property schema="transactioncurrencyid"/>
       </properties>
       <indexes>
-        <index schema="idx_systemuser_transactioncurrencyid" issystem="true">
+        <index schema="idx_systemuser_businessunitid" issystem="true">
           <fields>
-            <field schema="transactioncurrencyid"/>
+            <field schema="businessunitid"/>
           </fields>
         </index>
         <index schema="idx_systemuser_siteid" issystem="true">
@@ -3082,9 +2961,9 @@
             <field schema="siteid"/>
           </fields>
         </index>
-        <index schema="idx_systemuser_businessunitid" issystem="true">
+        <index schema="idx_systemuser_transactioncurrencyid" issystem="true">
           <fields>
-            <field schema="businessunitid"/>
+            <field schema="transactioncurrencyid"/>
           </fields>
         </index>
         <index schema="idx_systemuser_fullname" issystem="true">
@@ -3141,14 +3020,14 @@
         <property schema="uomscheduleid"/>
       </properties>
       <indexes>
-        <index schema="idx_uom_uomscheduleid" issystem="true">
-          <fields>
-            <field schema="uomscheduleid"/>
-          </fields>
-        </index>
         <index schema="idx_uom_baseuom" issystem="true">
           <fields>
             <field schema="baseuom"/>
+          </fields>
+        </index>
+        <index schema="idx_uom_uomscheduleid" issystem="true">
+          <fields>
+            <field schema="uomscheduleid"/>
           </fields>
         </index>
         <index schema="idx_uom_name" issystem="true">
@@ -3233,76 +3112,6 @@
         </index>
       </indexes>
     </entity>
-    <entity schema="xcrm_firepumpperformancetest">
-      <properties>
-        <property schema="createdon"/>
-        <property schema="modifiedon"/>
-        <property schema="statecode"/>
-        <property schema="statuscode"/>
-        <property schema="xcrm_coolinglooppressurepsi"/>
-        <property schema="xcrm_customerasset"/>
-        <property schema="xcrm_dieselwatertemperature"/>
-        <property schema="xcrm_dischargepressurepsi"/>
-        <property schema="xcrm_dischargevelocitypressurepsi"/>
-        <property schema="xcrm_exhaustbackpressureinhg"/>
-        <property schema="xcrm_firepumpperformancetestid"/>
-        <property schema="xcrm_flowgpm"/>
-        <property schema="xcrm_name"/>
-        <property schema="xcrm_netpressurepsi"/>
-        <property schema="xcrm_nozzlecoefficient"/>
-        <property schema="xcrm_nozzlesizein"/>
-        <property schema="xcrm_oilpressurepsi"/>
-        <property schema="xcrm_phaseaamps"/>
-        <property schema="xcrm_phaseabvolts"/>
-        <property schema="xcrm_phaseacvolts"/>
-        <property schema="xcrm_phasebamps"/>
-        <property schema="xcrm_phasebcvolts"/>
-        <property schema="xcrm_phasecamps"/>
-        <property schema="xcrm_pitotreading10psi"/>
-        <property schema="xcrm_pitotreading11psi"/>
-        <property schema="xcrm_pitotreading12psi"/>
-        <property schema="xcrm_pitotreading1psi"/>
-        <property schema="xcrm_pitotreading2psi"/>
-        <property schema="xcrm_pitotreading3psi"/>
-        <property schema="xcrm_pitotreading4psi"/>
-        <property schema="xcrm_pitotreading5psi"/>
-        <property schema="xcrm_pitotreading6psi"/>
-        <property schema="xcrm_pitotreading7psi"/>
-        <property schema="xcrm_pitotreading8psi"/>
-        <property schema="xcrm_pitotreading9psi"/>
-        <property schema="xcrm_pumpspeedrpm"/>
-        <property schema="xcrm_ratedcapacity"/>
-        <property schema="xcrm_rpmadjustedflowgpm"/>
-        <property schema="xcrm_rpmadjustnetpressurepsi"/>
-        <property schema="xcrm_suctionpressurepsi"/>
-        <property schema="xcrm_suctionvelocitypressurepsi"/>
-        <property schema="xcrm_velocityadjustedpressurepsi"/>
-        <property schema="xcrm_workorder"/>
-        <property schema="xcrm_workorderincidentid"/>
-      </properties>
-      <indexes>
-        <index schema="idx_xcrm_firepumpperformancetest_xcrm_workorderincidentid" issystem="true">
-          <fields>
-            <field schema="xcrm_workorderincidentid"/>
-          </fields>
-        </index>
-        <index schema="idx_xcrm_firepumpperformancetest_xcrm_customerasset" issystem="true">
-          <fields>
-            <field schema="xcrm_customerasset"/>
-          </fields>
-        </index>
-        <index schema="idx_xcrm_firepumpperformancetest_xcrm_workorder" issystem="true">
-          <fields>
-            <field schema="xcrm_workorder"/>
-          </fields>
-        </index>
-        <index schema="idx_xcrm_firepumpperformancetest_xcrm_name" issystem="true">
-          <fields>
-            <field schema="xcrm_name"/>
-          </fields>
-        </index>
-      </indexes>
-    </entity>
     <entity schema="xcrm_model">
       <properties>
         <property schema="createdon"/>
@@ -3318,14 +3127,14 @@
         <property schema="xcrm_product"/>
       </properties>
       <indexes>
-        <index schema="idx_xcrm_model_xcrm_product" issystem="true">
-          <fields>
-            <field schema="xcrm_product"/>
-          </fields>
-        </index>
         <index schema="idx_xcrm_model_ownerid" issystem="true">
           <fields>
             <field schema="ownerid"/>
+          </fields>
+        </index>
+        <index schema="idx_xcrm_model_xcrm_product" issystem="true">
+          <fields>
+            <field schema="xcrm_product"/>
           </fields>
         </index>
         <index schema="idx_xcrm_model_xcrm_name" issystem="true">
@@ -3343,8 +3152,8 @@
       <indexes>
         <index schema="idx_xcrm_msdyn_bookingsetup_xcrm_assetcategory" issystem="true">
           <fields>
-            <field schema="xcrm_assetcategoryid"/>
             <field schema="msdyn_agreementbookingsetupid"/>
+            <field schema="xcrm_assetcategoryid"/>
           </fields>
         </index>
       </indexes>
@@ -3376,24 +3185,9 @@
         <property schema="xcrm_workorder"/>
       </properties>
       <indexes>
-        <index schema="idx_xcrm_signingauthority_xcrm_order" issystem="true">
+        <index schema="idx_xcrm_signingauthority_ownerid" issystem="true">
           <fields>
-            <field schema="xcrm_order"/>
-          </fields>
-        </index>
-        <index schema="idx_xcrm_signingauthority_xcrm_newaccount" issystem="true">
-          <fields>
-            <field schema="xcrm_newaccount"/>
-          </fields>
-        </index>
-        <index schema="idx_xcrm_signingauthority_xcrm_workorder" issystem="true">
-          <fields>
-            <field schema="xcrm_workorder"/>
-          </fields>
-        </index>
-        <index schema="idx_xcrm_signingauthority_xcrm_technician" issystem="true">
-          <fields>
-            <field schema="xcrm_technician"/>
+            <field schema="ownerid"/>
           </fields>
         </index>
         <index schema="idx_xcrm_signingauthority_xcrm_existingcontact" issystem="true">
@@ -3406,14 +3200,29 @@
             <field schema="xcrm_existingorganization"/>
           </fields>
         </index>
-        <index schema="idx_xcrm_signingauthority_ownerid" issystem="true">
+        <index schema="idx_xcrm_signingauthority_xcrm_newaccount" issystem="true">
           <fields>
-            <field schema="ownerid"/>
+            <field schema="xcrm_newaccount"/>
           </fields>
         </index>
         <index schema="idx_xcrm_signingauthority_xcrm_newcontact" issystem="true">
           <fields>
             <field schema="xcrm_newcontact"/>
+          </fields>
+        </index>
+        <index schema="idx_xcrm_signingauthority_xcrm_order" issystem="true">
+          <fields>
+            <field schema="xcrm_order"/>
+          </fields>
+        </index>
+        <index schema="idx_xcrm_signingauthority_xcrm_technician" issystem="true">
+          <fields>
+            <field schema="xcrm_technician"/>
+          </fields>
+        </index>
+        <index schema="idx_xcrm_signingauthority_xcrm_workorder" issystem="true">
+          <fields>
+            <field schema="xcrm_workorder"/>
           </fields>
         </index>
         <index schema="idx_xcrm_signingauthority_xcrm_name" issystem="true">
@@ -3424,10 +3233,10 @@
       </indexes>
     </entity>
   </entities>
-  <home>bookableresourcebooking;Schedule;&lt;extra&gt;&lt;views&gt;bookableresourcebooking.*:bookableresourcebooking.@Todays Bookings&lt;/views&gt;&lt;map&gt;&lt;Latitude p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" /&gt;&lt;Longitude p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" /&gt;&lt;Zoom p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" /&gt;&lt;LatitudeField /&gt;&lt;LongitudeField /&gt;&lt;AggregatePins&gt;true&lt;/AggregatePins&gt;&lt;ExpandPins&gt;true&lt;/ExpandPins&gt;&lt;/map&gt;&lt;/extra&gt;</home>
+  <home>bookableresourcebooking;Schedule;&lt;extra&gt;&lt;views&gt;bookableresourcebooking.*:bookableresourcebooking.@Todays Bookings&lt;/views&gt;&lt;actions&gt;3;;1&lt;/actions&gt;&lt;map&gt;&lt;Latitude p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" /&gt;&lt;Longitude p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" /&gt;&lt;Zoom p3:nil="true" xmlns:p3="http://www.w3.org/2001/XMLSchema-instance" /&gt;&lt;LatitudeField /&gt;&lt;LongitudeField /&gt;&lt;AggregatePins&gt;true&lt;/AggregatePins&gt;&lt;ExpandPins&gt;true&lt;/ExpandPins&gt;&lt;/map&gt;&lt;/extra&gt;</home>
   <home>@Map;;Map</home>
   <home>account</home>
-  <home>msdyn_customerasset;;msdyn_customerasset.@Active Customer Assets :msdyn_customerasset.Equip Lineup View</home>
+  <home>msdyn_customerasset;;msdyn_customerasset.*:msdyn_customerasset.@Active Customer Assets :msdyn_customerasset.Default</home>
   <home>msdyn_timeoffrequest</home>
   <home>incident</home>
   <home>@Setup</home>
