@@ -1,0 +1,7 @@
+﻿Manufacturer=Microsoft Corporation
+ProductTitle=firepro365
+ProductSubTitle=
+PoweredBy=Powered by Resco.Net
+Icon=Logo.Logo.png
+Website=https://dynamics.microsoft.com/
+SupportEmail=
